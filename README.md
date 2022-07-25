@@ -3,6 +3,8 @@ My Everyday Progress of Learning Cpp
 
 ## Day 1
 1. Setup mingw and other toolkit for compiling
+	You can get all the instructions from here:
+	https://www.msys2.org/
 2. Create [hello world program](hello.cpp)  
 
           using namespace std;
