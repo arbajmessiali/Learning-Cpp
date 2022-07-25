@@ -2,9 +2,9 @@
 My Everyday Progress of Learning Cpp
 
 ## Day 1
-- Setup mingw and other toolkit for compiling
-- Create hello world program
-- Use mathematical operations with type conversion
+#### Setup mingw and other toolkit for compiling
+#### Create hello world program
+#### Use mathematical operations with type conversion
 	---
 		Some notes regarding mathematical functions:
 		1. '%' operand works only on *int* data type.
