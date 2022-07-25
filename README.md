@@ -4,7 +4,7 @@ My Everyday Progress of Learning Cpp
 ## Day 1
 1. Setup mingw and other toolkit for compiling
 2. Create [hello world program](hello.cpp)  
-		using namespace std;
+		using namespace std;  
 Using this code after **include <iostream>** would eliminate the use of **std::** at various lines
 3. Use mathematical operations with type conversion
 
