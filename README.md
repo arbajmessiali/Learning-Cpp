@@ -6,7 +6,7 @@ My Everyday Progress of Learning Cpp
 2. Create hello world program
 3. Use mathematical operations with type conversion
 
-###Notes
+### Notes
 ---
 		Some notes regarding mathematical functions:
 		1. '%' operand works only on *int* data type.
