@@ -1,3 +1,4 @@
+
 # Learning-Cpp
 My Everyday Progress of Learning Cpp
 
@@ -99,4 +100,13 @@ We can define a two-dimensional array the way we define two arrays. Each array d
 A text based battleship game using all the concepts we have known and dealt so far.
 
 ![Screenshot of the battleship game](images/twoDGame.PNG)
+
+4. [Structure](structure.cpp) with the help of person reference
+Structure helps in defining objects that have similar behaviour throughout their approach. It can also be viewed as an array that supports different data types for it's **member variables**. You can define a structure as:
+
+		struct{					||		struct {
+		[data_type] member1; 		||		int age;
+		[data_type] member2;		||		string name;
+		[data_type] member3;		||		string address;
+		} struct_name;				||		} person;
 > Written with [StackEdit](https://stackedit.io/).
