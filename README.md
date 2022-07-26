@@ -3,10 +3,9 @@ My Everyday Progress of Learning Cpp
 
 ## Day 1
 1. Setup mingw and other toolkit for compiling
-	
 	You can get all the instructions from here:
 	https://www.msys2.org/
-2. Create [hello world program](hello.cpp)  
+3. Create [hello world program](hello.cpp)  
 
           using namespace std;
 	Using this code after **include <iostream">** would eliminate the use of **std::** at various lines
@@ -18,7 +17,7 @@ My Everyday Progress of Learning Cpp
 		std::cout<<"Hello World"";		(if not using the above code)
 		cout<<"Hello World";
 		cout<<"Hello World"<<endl;		(for a new line)
-3. Use mathematical operations with type conversion
+4. Use mathematical operations with type conversion
 Ways to initialize data types are:
 
 		int a=10;
@@ -32,7 +31,7 @@ Ways to initialize data types are:
 						
 		1. '%' operand works only on *int* data type.
 		2. '/' needs the data types to be converted to *double* for exact output, or else it produces an *int* output.
-4. Use **[for](forloop.cpp)** loop
+5. Use **[for](forloop.cpp)** loop
 	This loop is written with the first command as the **initializing value**, the second command as the **limiting value** and the third command as the **step-wise increment/decrement**:
 	   
 	   for(int i=1; i<=10; i++)
@@ -43,7 +42,7 @@ Ways to initialize data types are:
 
 		i=i+2		or 		i=i-2
 		or some other value
-5. Use **[switch case](switchcase.cpp)**
+6. Use **[switch case](switchcase.cpp)**
 	It uses a conditional value to check for equality
 
 		switch(a)
@@ -67,4 +66,35 @@ Ways to initialize data types are:
 			cout<<"Four";
 		}
 
+## Day 2
+1. Using [array](arrayList.cpp) with sizeof() function
+	We can define by using 
+
+		[data type] variable_name [size] = {value1, value2, ...};
+		int array[5] = {1, 2, 3, 4, 5};
+		
+		//you can also define an array without giving a size
+		int a[] = {1,2,3,4};		this creates an array of dynamic size 4
+	We can pull the size of an array by using the **sizeof(array_name)** function.
+	**Note** : sizeof() function returns the value as **bytes** and not **int**.
+	We can convert it to **int** by dividing the value with the size of the data type used
+
+		int arrayLen = sizeof(myArray)/sizeof(int);
+		int arrLen = sizeof(Array2)/sizeof(string);
+	Something that I have noticed is that using the size function with regards to some loop or case function does result in various errors. Hence, it is better to use a variable to store the size variable rather than defining it in continuity.
+
+		for(int a = 0; a < (sizeof(myArray)/sizeof(int)); a++)
+		*The above code gives error.*
+
+		int len = sizeof(myArray)/sizeof(int);
+		for(int a = 0; a < len; a++)
+		*This has no errors.*
+2. [Two-dimensional array](two_d_array.cpp) and it's uses
+We can define a two-dimensional array the way we define two arrays. Each array defines each row of the two-dimensional array.
+
+		[data_type] variable_name [no. of rows][no. of elements in each row] = { {rowA1, rowA2, ...}, {rowB1, rowB2,....}};
+		int doubleArray [2][3] = {{1,2,3}, {4,5,6}};
+	All the values inside a two-dimensional array **should have the same data type**.
+3. Make a [text based game](two_d_game.cpp).
+A text based battleship game using all the concepts we have known and dealt so far.
 > Written with [StackEdit](https://stackedit.io/).
