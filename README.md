@@ -97,4 +97,6 @@ We can define a two-dimensional array the way we define two arrays. Each array d
 	All the values inside a two-dimensional array **should have the same data type**.
 3. Make a [text based game](two_d_game.cpp).
 A text based battleship game using all the concepts we have known and dealt so far.
+
+![Screenshot of the battleship game](images/twoDGame.PNG)
 > Written with [StackEdit](https://stackedit.io/).
