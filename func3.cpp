@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void func(string name){
-	cout<<"Your name is "<<name;
+void func(string name="Arbaj"){
+	cout<<"Your name is "<<name<<endl;
 }
 	
 int main(){
-	func("Arbaj Ali");
-	
+	func();
+	func("Ali");
 	return 0;
 }
