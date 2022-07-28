@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using namespace std;	
 int main()
 {
 	//creating the structure
@@ -8,7 +8,7 @@ int main()
 		string name;
 		int age;
 	};
-	
+
 	//defining the structure variable
 	employee emp1;
 	employee emp2;
