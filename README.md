@@ -1,4 +1,5 @@
 
+
 # Learning-Cpp
 My Everyday Progress of Learning Cpp
 
@@ -109,4 +110,94 @@ Structure helps in defining objects that have similar behaviour throughout their
 		[data_type] member2;		||		string name;
 		[data_type] member3;		||		string address;
 		} struct_name;			||		} person;
+
+5. We can define one structure for various other variables by giving the variable names after the structure skeleton.
+
+		struct{
+		int age;
+		string name;
+		string address;
+		} person1, person2, person3;
+	All these "person" variables will have the same structure with "age", "name" and "address" as the member variables.
+6. By giving a name after the **struct** declaration, we can treat it as a data type. 
+
+		struct person{
+		int age;
+		string name;
+		string address;
+		};
+
+		//Using "person" structure as data type
+		person p1;
+		person p2;
+	Values can be given to the member variables the same way we give values to any structure. [Refer](structk.cpp) 
+## Day3
+1. Using [pointers](pointer.cpp)
+Pointers are used to refer to the memory address of the variable instead of the variable. They should have the same data type as the variable. They are defined by an asterisk(*) after the data type and the variable that they are referring to should have an "&" start. 
+
+		string name = "Arbaj";
+		string* ptr = &name;
+		cout<<ptr;		(this would display the memory address in hexadecimal)
+
+	Pointers can also be used to display the value of the variable by using an asterisk(*) with the pointer variable; and also to change the value of the variable by giving the value to the pointer variable started by an asterisk(*).
+
+		string name = "Arbaj";
+		string* ptr = &name;
+		cout<<ptr<<endl;		(display the memory address)
+		cout<<*ptr<<endl;		(displays "Arbaj");
+
+		*ptr = "Ali";
+		cout<<ptr<<endl;		(displays the same memory address as the previous)
+		cout<<*ptr<<endl;		(displays "Ali")
+	You may ask why do we need to use pointer. That's a fair and good question.
+	As pointers directly refer to the memory address of the variable, we can use the values directly from the memory instead of going through a variable. This makes the code faster and smaller in size.
+
+2. Using [functions](func.cpp)
+Functions are used to call processes if they are used many times in the main function, or to keep the code precise.
+They are defined as the main function with a return variable, the name of the variable and the inner lines of code inside the body of the function. [Refer to this code.](func.cpp)
+
+		void function_name{
+		//code
+		}
+	The function should be declared before the main function. You can initialize the function before or after the code, it does not matter. But if you declare the function after the main function, it would not execute. [Refer](func2.cpp)
+
+		void call(){};
+		
+		int main(){
+		//code
+		}
+		
+		void call(){
+		//code inside call
+		}
+3. Using **arguments** inside a function to have dynamic outputs as per the given input. [Refer](func3.cpp)
+We can have variables within the function that needs no declaration before to use them inside the function code. This helps reduce the declaration code and also to have dynamic outputs. The variables within the function are known as **parameters** and the values passed by the main function to use in the function are known as **arguments**.
+
+		void call(string name){	//function with parameter
+		cout<<name;
+		}
+
+		int main()
+		{
+		call("Arbaj");			//calling function with argument
+		//this would display the argument passed in the function call
+		return 0;
+		} 
+4. We can also have default arguments within the function if no arguments are passed when calling the function
+
+		void call(string name="Arbaj"){
+		cout<<name<<endl;
+		}
+
+		int main(){
+		call("Ali);
+		call();
+		return 0;
+		}
+
+		The output is:
+		Ali
+		Arbaj
+
+
 > Written with [StackEdit](https://stackedit.io/).
